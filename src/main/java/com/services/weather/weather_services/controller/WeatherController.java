@@ -67,7 +67,7 @@ public class WeatherController {
         return null;
     }
 
-    private LocalDateTime getEventTime() {
+    LocalDateTime getEventTime() {
         Random random = new Random();
         int randomInt = random.nextInt(7);
         return LocalDateTime.now().plusDays(randomInt);
